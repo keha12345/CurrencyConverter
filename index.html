@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Currency converter</title>
 </head>
 <body>
     <header class="header">
-        <img src="" alt="" class="logo">
-        <nav class="navigation">
-            <div class="nav-item">банк</div>
-            <div class="nav-item">бизнес</div>
-            <div class="nav-item">инвестиции</div>
-            <div class="nav-item">страхование</div>
-            <div class="nav-item">мобайл</div>
-            <div class="nav-item">путешествия</div>
-            <div class="nav-item">развлечения</div>
-        </nav>
-        <button type="submit">ВОЙТИ</button>
+        <div class="header-container">
+            <img src="logo.png" alt="bank logo" class="logo">
+            <nav class="navigation">
+                <div class="nav-item">банк</div>
+                <div class="nav-item">бизнес</div>
+                <div class="nav-item">инвестиции</div>
+                <div class="nav-item">страхование</div>
+                <div class="nav-item">мобайл</div>
+                <div class="nav-item">путешествия</div>
+                <div class="nav-item">развлечения</div>
+            </nav>
+            <button type="submit">ВОЙТИ</button>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -29,26 +31,29 @@
             <div class="converter-container">
                 <div class="converter-block">
                     <h2 class="converter-title">У меня есть</h2>
-                    <div class="converter-currency">rub</div>
-                    <div class="converter-currency">usd</div>
-                    <div class="converter-currency">eur</div>
-                    <div class="converter-currency">gbp</div>
-                    <!-- или кнопки? -->
-                    <div class="converter-field">
-                        <input type="text" class="sum">
-                        <span class="rate"></span>
+                    <div class="buttons">
+                        <div id="leftRub" class="converter-currency select-button ">RUB</div>
+                        <div id="leftUsd" class="converter-currency">USD</div>
+                        <div id="leftEur" class="converter-currency">EUR</div>
+                        <div id="leftGbp" class="converter-currency">GBP</div>
+                    </div>
+                    <div class="converter-input">
+                        <input type="text" class="left-sum" id="leftSum">
+                        <span id="hint"> 1 RUB = </span>
                     </div>
                 </div>
+
                 <div class="converter-block">
-                    <h2 class="converter-title">Хочу приобрести</h2>
-                    <div class="converter-currency">rub</div>
-                    <div class="converter-currency">usd</div>
-                    <div class="converter-currency">eur</div>
-                    <div class="converter-currency">gbp</div>
-                    <!-- или кнопки? -->
-                    <div class="converter-field">
-                        <input type="text" class="sum2">
-                        <span class="rate2"></span>
+                    <h2 class="converter-title"> Я хочу приобрести</h2>
+                    <div class="buttons">
+                        <div id="rightRub" class="converter-currency select-button ">RUB</div>
+                        <div id="rightUsd" class="converter-currency">USD</div>
+                        <div id="rightEur" class="converter-currency">EUR</div>
+                        <div id="rightGbp" class="converter-currency">GBP</div>
+                    </div>
+                    <div class="converter-input">
+                        <input type="text" class="right-sum" id="rightSum">
+                        <span id="hint"> 1 RUB = </span>
                     </div>
                 </div>
             </div>
