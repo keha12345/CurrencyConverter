@@ -25,8 +25,8 @@ body {
 }
 .navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
 .nav-item {
     font-weight: 500;
@@ -53,6 +53,7 @@ button {
     padding: 7px 10px;
     cursor: pointer;
     outline: none;
+    border: none;
 }
 /*кнопка так ли сделана?*/
 
